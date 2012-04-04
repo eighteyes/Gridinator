@@ -1,0 +1,11 @@
+Gridinator is a WordPress plugin to display and edit heirarchically organized information nodes within a WordPress page.
+
+It is highly customized for a particular utility, and does not have any administrative or customizable features. Data is modified through inline editing when a logged in user accesses the page.
+
+Currently included is:
+• Title Field - Displayed on Main Page
+• Lightbox popup for the details on each node.
+• Two paragraph fields, one of which sorts and builds links.
+• Two image uploads, each with description and tagline field.
+
+You will have to tinker with this to get it to work for your purposes, but if you're looking to build something similiar, I'm sure it will be a useful starting point.
