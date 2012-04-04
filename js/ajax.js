@@ -9,13 +9,13 @@ function resetEdit() {
 }
 
 function activateUploadLink() {
-	
+
 	$('input[type=file]').each(function() {
 		var img = $(this).attr('data-imageurl');
 		console.log('image exists ?', img, $(this));
 
 			$('<img>').attr('width',100).attr('height',100).addClass('tn').attr('src', img).insertBefore($(this));
-		
+
 	});
 
     $('.upload_img').click(function(e) {
@@ -56,7 +56,7 @@ function activateUploadLink() {
             }
             data.append('file-' + i, file);
             console.log(file);
-            type = file.fileName.substr(0, -3);
+            type = file.name.substr(0, -3);
         });
 
         data.append('action', 'upload_image');
@@ -124,7 +124,7 @@ function setupEditButton() {
 
 function setupSaveButton() {
     // save changes to json object
-    
+
     $('.save_details').unbind('click');
     $('.save_details').click(function() {
         var id = activeId;
@@ -132,7 +132,7 @@ function setupSaveButton() {
         var dataStorage = activeDOMNode.next('.details_data');
         var name = $('#details #details_header_input').val();
 
-     
+
 
         activeDOMNode.text(name);
 
